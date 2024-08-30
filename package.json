@@ -1,0 +1,40 @@
+{
+  "name": "@gunny/mock",
+  "version": "1.0.1",
+  "description": "生成模拟数据",
+  "main": "dist/mock.js",
+  "typings": "dist/mock.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc -w",
+    "preview": "node preview.js",
+    "build": "tsc && rollup dist/index.js --file dist/mock.js --format es && api-extractor run --local --verbose",
+    "test": "vitest"
+  },
+  "author": "wuzhitao",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sutras/mock.git"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.47.7",
+    "@types/node": "^22.5.0",
+    "rollup": "^4.21.2",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "region-data": "^1.2.3"
+  },
+  "files": [
+    "dist/mock.js",
+    "dist/mock.d.ts"
+  ],
+  "keywords": [
+    "mock",
+    "mocker",
+    "fake",
+    "faker",
+    "generate data"
+  ]
+}
